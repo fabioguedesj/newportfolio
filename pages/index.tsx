@@ -1,13 +1,12 @@
-import FooterSection from 'components/layout/FooterSection';
-import HeaderSection from 'components/layout/HeaderSection';
+import MainWrapper from 'components/layout/MainWrapper';
+import Resources from 'components/layout/Resources';
 import type { NextPage } from 'next';
 
 const Home: NextPage = () => {
   return (
-    <>
-      <HeaderSection />
-      <FooterSection />
-    </>
+    <MainWrapper>
+      <Resources />
+    </MainWrapper>
   );
 };
 

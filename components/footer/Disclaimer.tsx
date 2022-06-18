@@ -1,11 +1,11 @@
-import StyledDisclaimer from "./Disclaimer.styled";
+import classes from './Disclaimer.module.scss';
 
 const Disclaimer = () => {
   return (
-    <StyledDisclaimer>
+    <div className={classes.disclaimer}>
       <p>Página feita por Fábio Guedes.</p>
       <p>&copy; 2022. Todos os direitos reservados.</p>
-    </StyledDisclaimer>
+    </div>
   );
 };
 

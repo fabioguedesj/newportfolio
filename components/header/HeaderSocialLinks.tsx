@@ -1,12 +1,12 @@
 import SocialLinks from 'components/UI/SocialLinks';
-import StyledSocial from './HeaderSocialLinks.styled';
+import classes from './HeaderSocialLinks.module.scss';
 
 const HeaderSocialLinks = () => {
   return (
-    <StyledSocial>
+    <div className={classes.social}>
       <SocialLinks />
-      <div className='line' />
-    </StyledSocial>
+      <div className={classes.line} />
+    </div>
   );
 };
 

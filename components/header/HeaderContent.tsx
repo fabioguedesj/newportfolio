@@ -1,14 +1,16 @@
-import StyledHeaderContent from './HeaderContent.styled';
+import classes from './HeaderContent.module.scss';
 
 const HeaderContent = () => {
   return (
-    <StyledHeaderContent>
-      <span className='top-title'>Olá, meu nome é Fábio Guedes, sou um</span>
-      <h1 className='title'>Desenvolvedor frontend</h1>
-      <span className='caption'>
-        Sites | Portfólios | Aplicações WEB | Mentorias
+    <div className={classes['header-content']}>
+      <span className={classes['top-title']}>
+        Olá, meu nome é Fábio Guedes, sou um
       </span>
-    </StyledHeaderContent>
+      <h1 className={classes['title']}>Desenvolvedor frontend</h1>
+      <span className={classes['caption']}>
+        E esse é meu acervo para você 🎁
+      </span>
+    </div>
   );
 };
 

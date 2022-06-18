@@ -1,11 +1,11 @@
 import SocialLinks from 'components/UI/SocialLinks';
-import StyledFooterSocial from './FooterSocialLinks.styled';
+import classes from './FooterSocialLinks.module.scss';
 
 const FooterSocialLinks = () => {
   return (
-    <StyledFooterSocial>
+    <div className={classes.social}>
       <SocialLinks />
-    </StyledFooterSocial>
+    </div>
   );
 };
 

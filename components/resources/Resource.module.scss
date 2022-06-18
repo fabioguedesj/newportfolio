@@ -1,0 +1,37 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+
+.resource {
+  margin-bottom: 12rem;
+
+  @include device(mobile) {
+    margin-bottom: 8rem;
+  }
+
+  h2 {
+    margin-bottom: 4rem;
+
+    @include device(mobile) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .resources {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem 1rem;
+
+    @include device(laptop) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include device(tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include device(mobile) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem 1rem;
+    }
+  }
+}

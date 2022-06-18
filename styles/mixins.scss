@@ -1,0 +1,31 @@
+@mixin device($name) {
+  @if $name == desktop {
+    @media only screen and (max-width: 1440px) {
+      @content;
+    }
+  }
+
+  @if $name == laptop {
+    @media only screen and (max-width: 1024px) {
+      @content;
+    }
+  }
+
+  @if $name == tablet {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $name == mobile {
+    @media only screen and (max-width: 480px) {
+      @content;
+    }
+  }
+
+  @if $name == small {
+    @media only screen and (max-width: 380px) {
+      @content;
+    }
+  }
+}

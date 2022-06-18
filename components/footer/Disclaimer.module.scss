@@ -1,0 +1,9 @@
+@import 'styles/variables.scss';
+
+.disclaimer {
+  p {
+    color: $lightGray;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+}

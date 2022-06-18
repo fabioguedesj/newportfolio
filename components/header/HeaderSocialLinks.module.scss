@@ -1,0 +1,38 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+
+.social {
+  position: absolute;
+  left: 2rem;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(10rem + (4rem * 4));
+
+  .line {
+    background-color: $lightGray;
+    width: 2px;
+    height: 10rem;
+    margin: 0 auto;
+  }
+
+  @include device(tablet) {
+    left: 50%;
+    bottom: 12rem;
+    flex-direction: row;
+    justify-content: space-around;
+    width: calc(3.5rem * 4);
+    height: fit-content;
+    transform: translate(-50%, -50%);
+
+    .line {
+      display: none;
+    }
+  }
+
+  @include device(mobile) {
+    bottom: 13rem;
+  }
+}

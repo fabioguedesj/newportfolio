@@ -1,0 +1,14 @@
+@import 'styles/mixins.scss';
+
+.social {
+  width: calc(4rem * 4);
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include device(tablet) {
+    width: calc(3.5rem * 4);
+  }
+}

@@ -1,6 +1,7 @@
-import styled from 'styled-components';
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
 
-const StyledHeaderContent = styled.div`
+.header-content {
   max-width: 60rem;
   text-align: center;
   padding: 0 2rem;
@@ -8,22 +9,22 @@ const StyledHeaderContent = styled.div`
   .top-title {
     display: block;
     font-size: 2.1rem;
-    color: ${({ theme }) => theme.colors.cyan};
+    color: $link;
   }
 
   .title {
     font-size: 7.6rem;
     line-height: 8rem;
-    color: ${({ theme }) => theme.colors.white};
+    color: $white;
   }
 
   .caption {
     display: block;
-    color: ${({ theme }) => theme.colors.darkGray};
+    color: $lightGray;
     margin-top: 2rem;
   }
 
-  @media only screen and (max-width: 840px) {
+  @include device(laptop) {
     max-width: 50rem;
 
     .top-title {
@@ -36,11 +37,11 @@ const StyledHeaderContent = styled.div`
     }
   }
 
-  @media only screen and (max-width: 768px) {
+  @include device(tablet) {
     margin-bottom: 8rem;
   }
 
-  @media only screen and (max-width: 440px) {
+  @include device(mobile) {
     .title {
       font-size: 5rem;
       line-height: 5rem;
@@ -51,7 +52,7 @@ const StyledHeaderContent = styled.div`
     }
   }
 
-  @media only screen and (max-width: 350px) {
+  @include device(small) {
     .top-title {
       font-size: 1.6rem;
     }
@@ -61,6 +62,4 @@ const StyledHeaderContent = styled.div`
       line-height: 4.5rem;
     }
   }
-`;
-
-export default StyledHeaderContent;
+}
