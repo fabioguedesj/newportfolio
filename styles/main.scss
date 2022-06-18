@@ -72,6 +72,10 @@ h3,
   color: $black;
   font-size: 2.1rem;
   text-transform: capitalize;
+
+  @include device(laptop) {
+    font-size: 1.8rem;
+  }
 }
 
 p,
