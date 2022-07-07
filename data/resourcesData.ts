@@ -403,20 +403,6 @@ const resourcesData = [
       },
     ],
   },
-  {
-    heading: 'Para ir mais longe',
-    list: [
-      {
-        name: 'Medium',
-        description:
-          'Me siga no medium para ter acesso a uma coletânia atualizada de artigos sobre Javascript.',
-        image:
-          'https://res.cloudinary.com/fabioguedesj/image/upload/v1655510185/portfolio/medium_rihvgj.png',
-        alt: 'Medium',
-        link: 'https://medium.com/@fabioaz.guedes',
-      },
-    ],
-  },
 ];
 
 export default resourcesData;
